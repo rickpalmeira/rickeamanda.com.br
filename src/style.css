@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alyson Signature";
-  src: url("Alyson Signature.otf") format("opentype");
+  src: url("/Alyson Signature.otf") format("opentype");
 }
 
 :root {
