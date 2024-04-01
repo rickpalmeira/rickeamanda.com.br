@@ -1,5 +1,5 @@
 import './style.css'
-import logo from '/logo.jpg'
+import logo from '/logo.png'
 import { setupCounter } from './counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
