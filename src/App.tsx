@@ -6,10 +6,6 @@ import flowerTopLeft from "./assets/flower-top-left.svg";
 import flowerTopRight from "./assets/flower-top-right.svg";
 
 function App() {
-  const cssVars = {
-    "--banner": `url(${banner})`,
-  };
-
   const parents = [
     "Raimundo Nonato da Silva",
     "Nicolau Palmeira",
@@ -31,7 +27,7 @@ function App() {
   return (
     <>
       <div
-        style={cssVars}
+        style={{ backgroundImage: `url(${banner})` }}
         className="bg-[image:var(--banner)] bg-no-repeat bg-top-m-100 bg-contain bg-[#fbfbfb]"
       >
         <div className="absolute min-w-128 max-h-96 overflow-hidden flex justify-between w-full">
