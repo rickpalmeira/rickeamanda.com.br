@@ -12,9 +12,6 @@ export default {
       backgroundPosition: {
         "top-m-100": "center -100px",
       },
-      spacing: {
-        128: "32rem",
-      },
     },
   },
   plugins: [],

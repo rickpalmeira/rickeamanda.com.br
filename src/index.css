@@ -12,23 +12,9 @@
 
   @font-face {
     font-family: "Garamond Premr Pro";
-    src: url("fonts/GaramondPremrPro-It.otf") format("opentype");
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: "Garamond Premr Pro";
     src: url("fonts/GaramondPremrPro-Smbd.otf") format("opentype");
     font-weight: 600;
     font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Garamond Premr Pro";
-    src: url("fonts/GaramondPremrPro-SmbdIt.otf") format("opentype");
-    font-weight: 600;
-    font-style: italic;
   }
 
   @font-face {
