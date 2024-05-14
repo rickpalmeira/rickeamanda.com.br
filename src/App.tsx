@@ -6,15 +6,15 @@ import flowerTopLeft from "./assets/flower-top-left.svg";
 import flowerTopRight from "./assets/flower-top-right.svg";
 
 function App() {
-  // const parents = [
-  //   "Raimundo Nonato da Silva",
-  //   "Nicolau Palmeira",
-  //   "Cláudia Fernandes de Melo Silva",
-  //   "Teresa Rodrigues Palmeira",
-  // ];
+  const parents = [
+    "Raimundo Nonato da Silva",
+    "Nicolau Palmeira",
+    "Cláudia Fernandes de Melo Silva",
+    "Teresa Rodrigues Palmeira",
+  ];
 
-  // const ceremonyLocation = "Paróquia Nossa Senhora de Fátima";
-  // const receptionLocation = "Chácara Paris, Goiânia, Goiás.";
+  const ceremonyLocation = "Paróquia Nossa Senhora de Fátima";
+  const receptionLocation = "Chácara Paris, Goiânia, Goiás.";
 
   const buttonList = [
     { label: "Local da Cerimônia", ref: "#" },
@@ -28,7 +28,7 @@ function App() {
     <>
       <div
         style={{ backgroundImage: `url(${banner})` }}
-        className="bg-[image:var(--banner)] bg-no-repeat bg-top-m-100 bg-contain bg-[#fbfbfb] min-w-[498px]"
+        className="bg-[image:var(--banner)] bg-no-repeat bg-top-m-100 bg-contain 2xl:bg-cover bg-[#fbfbfb] min-w-[498px]"
       >
         <div className="absolute max-h-96 overflow-hidden flex justify-between w-dvw min-w-[498px]">
           <img
@@ -42,14 +42,14 @@ function App() {
             aria-hidden
           />
         </div>
-        <div className="container px-5 flex flex-col justify-end items-center min-h-screen mx-auto text-[#9f2d61] font-serif tracking-wide">
+        <div className="container px-5 pt-32 pb-12 flex flex-col justify-between h-dvh items-center mx-auto text-[#9f2d61] font-serif tracking-wide">
           <img
             src={monogram}
-            className="h-48 mb-4 z-10"
+            className="h-48 z-10"
             alt="Amanda e Rick"
             aria-hidden
           />
-          {/* <div className="grid grid-cols-2 gap-x-8">
+          <div className="grid grid-cols-2 gap-x-8">
             {parents.map((parent, index) => (
               <div
                 className={
@@ -61,13 +61,13 @@ function App() {
                 {parent}
               </div>
             ))}
-          </div> */}
+          </div>
           <h1 className="font-cursive text-[#2f8297] text-8xl pr-2">
             Amanda e Rick
           </h1>
-          {/* <p className="uppercase tracking-widest">
+          <p className="uppercase tracking-widest">
             Convidam para seu casamento
-          </p> */}
+          </p>
           <h2 className="flex items-center uppercase text-lg tracking-widest font-semibold">
             <span className="border-y-2 px-2 border-[#e2acc8]">
               <span className="text-3xl font-normal">17</span> de Agosto de
@@ -80,15 +80,15 @@ function App() {
               <span className="text-3xl font-normal">17</span> Horas
             </span>
           </h2>
-          {/* <p className="tracking-wider">
+          <p className="tracking-wider">
             <span className="uppercase">Cerimônia: </span>
             <span>{ceremonyLocation}</span>
           </p>
           <p className="tracking-wider">
             <span className="uppercase">Recepção: </span>
             <span>{receptionLocation}</span>
-          </p> */}
-          <div className="flex flex-col items-stretch gap-2 mb-12">
+          </p>
+          <div className="flex flex-col items-stretch gap-2">
             {buttonList.map((button, index) => (
               <a href={button.ref} key={index}>
                 <button className="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#889973] border-2 text-[#2f8297] rounded-full">
