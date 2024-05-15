@@ -32,18 +32,27 @@ function App() {
 
   function DateTime() {
     return (
-      <h2 className="flex whitespace-nowrap items-center uppercase text-lg tracking-widest font-semibold">
-        <span className="border-y-2 px-2 border-[#e2acc8]">
-          <span className="text-3xl font-normal">17</span> de Agosto de
-          <span className="text-3xl font-normal"> 2024</span>
-        </span>
-        <span className="h-auto w-14 pt-3 -ml-3 -mr-4 z-10" aria-hidden>
-          <img src={dateFlower} />
-        </span>
-        <span className="border-y-2 px-2 border-[#e2acc8]">
-          <span className="text-3xl font-normal">17</span> Horas
-        </span>
-      </h2>
+      <a
+        href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NXNkbmpxMjNuMGk2aDFhOWMzc2ZxMmhwZmIgcmlja2luYnNiQG0&tmsrc=rickinbsb%40gmail.com"
+        target="_blank"
+      >
+        <h2 className="flex items-center uppercase text-lg tracking-widest font-semibold">
+          <span className="border-y-2 px-2 border-[#e2acc8]">
+            <span className="text-3xl font-normal">17</span>
+            <span className="text-3xl font-normal sm:hidden">/08/</span>
+            <span className="hidden sm:inline"> de Agosto de </span>
+            <span className="text-3xl font-normal">2024</span>
+          </span>
+          <span className="h-auto w-14 pt-3 -ml-3 -mr-4 z-10" aria-hidden>
+            <img src={dateFlower} />
+          </span>
+          <span className="border-y-2 px-2 border-[#e2acc8]">
+            <span className="text-3xl font-normal">17</span>
+            <span className="text-3xl font-normal sm:hidden">:00</span>
+            <span className="hidden sm:inline"> Horas</span>
+          </span>
+        </h2>
+      </a>
     );
   }
 
@@ -61,7 +70,7 @@ function App() {
     const weddingDate = new Date("2024-08-17T17:00:00");
     const timeDiff = weddingDate.getTime() - currentDate.getTime();
     return (
-      <div className="flex gap-4 border-y-2 px-4 border-[#e2acc8]">
+      <div className="flex justify-around border-y-2 w-full sm:justify-center sm:gap-12 sm:w-auto sm:px-4 border-[#e2acc8]">
         <div className="flex flex-col items-center">
           <span className="text-4xl">
             {Math.floor(timeDiff / (1000 * 60 * 60 * 24))}
@@ -135,16 +144,13 @@ function App() {
   return (
     <div className="bg-[#fbfbfb]">
       <Banner />
-      <div className="container pb-12 flex flex-col justify-between h-[60dvh] items-center mx-auto text-[#9f2d61] font-serif tracking-wide">
+      <div className="container px-6 pb-12 flex flex-col justify-between h-[60dvh] items-center mx-auto text-[#9f2d61] font-serif tracking-wide">
         <img
           src={monogram}
           className="h-48 -mt-24 z-10"
           alt="Amanda e Rick"
           aria-hidden
         />
-        <h1 className="font-cursive text-[#2f8297] text-8xl pr-2">
-          Amanda e Rick
-        </h1>
         <DateTime />
         <Countdown />
       </div>
