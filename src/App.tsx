@@ -8,24 +8,6 @@ import monogram from "./assets/monogram-02.svg";
 import dateFlower from "./assets/flower-date.svg";
 
 function App() {
-  const parents = [
-    "Raimundo Nonato da Silva",
-    "Nicolau Palmeira",
-    "Cláudia Fernandes de Melo Silva",
-    "Teresa Rodrigues Palmeira",
-  ];
-
-  const ceremonyLocation = "Paróquia Nossa Senhora de Fátima";
-  const receptionLocation = "Chácara Paris, Goiânia, Goiás.";
-
-  const buttonList = [
-    { label: "Local da Cerimônia", ref: "#" },
-    { label: "Local da Recepção", ref: "#" },
-    { label: "Sugestões de Presentes", ref: "#" },
-    { label: "Confirmação de Presença", ref: "#" },
-    { label: "Livro de Recados", ref: "#" },
-  ];
-
   function Banner() {
     return (
       <header
@@ -45,23 +27,6 @@ function App() {
           />
         </div>
       </header>
-    );
-  }
-
-  function Parents(props: { parentList: string[] }) {
-    return (
-      <section className="grid grid-cols-2 gap-x-8">
-        {props.parentList.map((parent, index) => (
-          <div
-            className={
-              (index % 2 ? "text-right" : "text-left") + " whitespace-nowrap"
-            }
-            key={index}
-          >
-            {parent}
-          </div>
-        ))}
-      </section>
     );
   }
 
@@ -123,34 +88,54 @@ function App() {
     );
   }
 
-  function Locations() {
-    return (
-      <section className="text-center">
-        <p className="tracking-wider">
-          <span className="uppercase">Cerimônia: </span>
-          <span>{ceremonyLocation}</span>
-        </p>
-        <p className="tracking-wider">
-          <span className="uppercase">Recepção: </span>
-          <span>{receptionLocation}</span>
-        </p>
-      </section>
-    );
-  }
+  // function Parents(props: { parentList: string[] }) {
+  //   return (
+  //     <section className="grid grid-cols-2 gap-x-8">
+  //       {props.parentList.map((parent, index) => (
+  //         <div
+  //           className={
+  //             (index % 2 ? "text-right" : "text-left") + " whitespace-nowrap"
+  //           }
+  //           key={index}
+  //         >
+  //           {parent}
+  //         </div>
+  //       ))}
+  //     </section>
+  //   );
+  // }
 
-  function ButtonList(props: { buttonList: { label: string; ref: string }[] }) {
-    return (
-      <section className="flex flex-col items-stretch gap-2">
-        {buttonList.map((button, index) => (
-          <a href={button.ref} key={index}>
-            <button className="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#889973] border-2 text-[#2f8297] rounded-full">
-              {button.label}
-            </button>
-          </a>
-        ))}
-      </section>
-    );
-  }
+  // function Locations() {
+  //   const ceremonyLocation = "Paróquia Nossa Senhora de Fátima";
+  //   const receptionLocation = "Chácara Paris, Goiânia, Goiás.";
+
+  //   return (
+  //     <section className="text-center">
+  //       <p className="tracking-wider">
+  //         <span className="uppercase">Cerimônia: </span>
+  //         <span>{ceremonyLocation}</span>
+  //       </p>
+  //       <p className="tracking-wider">
+  //         <span className="uppercase">Recepção: </span>
+  //         <span>{receptionLocation}</span>
+  //       </p>
+  //     </section>
+  //   );
+  // }
+
+  // function ButtonList(props: { buttonList: { label: string; ref: string }[] }) {
+  //   return (
+  //     <section className="flex flex-col items-stretch gap-2">
+  //       {buttonList.map((button, index) => (
+  //         <a href={button.ref} key={index}>
+  //           <button className="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#889973] border-2 text-[#2f8297] rounded-full">
+  //             {button.label}
+  //           </button>
+  //         </a>
+  //       ))}
+  //     </section>
+  //   );
+  // }
 
   return (
     <div className="bg-[#fbfbfb]">
