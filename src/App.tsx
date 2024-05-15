@@ -12,7 +12,7 @@ function App() {
     return (
       <header
         style={{ backgroundImage: `url(${bannerImg})` }}
-        className="bg-[image:var(--banner)] bg-no-repeat bg-bottom bg-cover h-[50dvh] bg-black"
+        className="bg-[image:var(--banner)] bg-no-repeat bg-bottom bg-cover h-[40dvh]"
       >
         <div className="absolute max-h-96 overflow-hidden flex justify-between w-dvw">
           <img
@@ -92,12 +92,7 @@ function App() {
   //   return (
   //     <section className="grid grid-cols-2 gap-x-8">
   //       {props.parentList.map((parent, index) => (
-  //         <div
-  //           className={
-  //             (index % 2 ? "text-right" : "text-left") + " whitespace-nowrap"
-  //           }
-  //           key={index}
-  //         >
+  //         <div className={index % 2 ? "text-right" : "text-left"} key={index}>
   //           {parent}
   //         </div>
   //       ))}
@@ -140,14 +135,14 @@ function App() {
   return (
     <div className="bg-[#fbfbfb]">
       <Banner />
-      <div className="container px-5 pb-12 flex flex-col justify-between h-[50dvh] items-center mx-auto text-[#9f2d61] font-serif tracking-wide">
+      <div className="container pb-12 flex flex-col justify-between h-[60dvh] items-center mx-auto text-[#9f2d61] font-serif tracking-wide">
         <img
           src={monogram}
           className="h-48 -mt-24 z-10"
           alt="Amanda e Rick"
           aria-hidden
         />
-        <h1 className="font-cursive whitespace-nowrap text-[#2f8297] text-8xl pr-2">
+        <h1 className="font-cursive text-[#2f8297] text-8xl pr-2">
           Amanda e Rick
         </h1>
         <DateTime />
