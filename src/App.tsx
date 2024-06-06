@@ -135,7 +135,7 @@ class App extends Component {
           />
           <DateTime />
           <Countdown />
-          <ButtonList buttonList={buttons} />
+          {/* <ButtonList buttonList={buttons} /> */}
         </div>
       </div>
     );
