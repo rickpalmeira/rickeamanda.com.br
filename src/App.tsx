@@ -9,12 +9,12 @@ import dateFlower from "./assets/flower-date.svg";
 
 class App extends Component {
   render() {
-    const buttons = [
-      // { label: "Confirme sua presença", ref: "#rsvp" },
-      { label: "Lista de Presentes", ref: "#gifts" },
-      // { label: "Local da Cerimônia", ref: "#location" },
-      // { label: "Fotos", ref: "#gallery" },
-    ];
+    // const buttons = [
+    //   { label: "Confirme sua presença", ref: "#rsvp" },
+    //   { label: "Lista de Presentes", ref: "#gifts" },
+    //   { label: "Local da Cerimônia", ref: "#location" },
+    //   { label: "Fotos", ref: "#gallery" },
+    // ];
 
     function Banner() {
       return (
@@ -107,21 +107,21 @@ class App extends Component {
       );
     }
 
-    function ButtonList(props: {
-      buttonList: { label: string; ref: string }[];
-    }) {
-      return (
-        <section className="flex flex-col items-stretch gap-2">
-          {props.buttonList.map((button, index) => (
-            <a href={button.ref} key={index}>
-              <button className="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#889973] border-2 text-[#2f8297] rounded-full">
-                {button.label}
-              </button>
-            </a>
-          ))}
-        </section>
-      );
-    }
+    // function ButtonList(props: {
+    //   buttonList: { label: string; ref: string }[];
+    // }) {
+    //   return (
+    //     <section className="flex flex-col items-stretch gap-2">
+    //       {props.buttonList.map((button, index) => (
+    //         <a href={button.ref} key={index}>
+    //           <button className="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#889973] border-2 text-[#2f8297] rounded-full">
+    //             {button.label}
+    //           </button>
+    //         </a>
+    //       ))}
+    //     </section>
+    //   );
+    // }
 
     return (
       <div className="bg-[#fbfbfb] min-w-[294px]">
@@ -135,7 +135,6 @@ class App extends Component {
           />
           <DateTime />
           <Countdown />
-          {/* <ButtonList buttonList={buttons} /> */}
         </div>
       </div>
     );
