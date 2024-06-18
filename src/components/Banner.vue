@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import bannerImg from "../assets/banner.png";
+  import bannerImg from "../assets/banner.webp";
   import flowerTopLeft from "../assets/flower-top-left.svg";
   import flowerTopRight from "../assets/flower-top-right.svg";
 </script>
