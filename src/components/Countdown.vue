@@ -23,31 +23,31 @@
 
 <template>
   <div
-    class="flex justify-around border-y-2 w-full sm:justify-center sm:gap-12 sm:w-auto sm:px-4 border-[#e2acc8]"
+    class="flex justify-around border-y-2 w-full sm:justify-center sm:gap-12 sm:w-auto sm:px-4 border-[#DAADC6]"
   >
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor(timeDiff / (1000 * 60 * 60 * 24)) }}
       </span>
-      <span class="text-[#2f8297] uppercase">dias</span>
+      <span class="text-[#2F8296] uppercase">dias</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / (1000 * 60 * 60)) % 24) }}
       </span>
-      <span class="text-[#2f8297] uppercase">horas</span>
+      <span class="text-[#2F8296] uppercase">horas</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / (1000 * 60)) % 60) }}
       </span>
-      <span class="text-[#2f8297] uppercase">minutos</span>
+      <span class="text-[#2F8296] uppercase">minutos</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / 1000) % 60) }}
       </span>
-      <span class="text-[#2f8297] uppercase">segundos</span>
+      <span class="text-[#2F8296] uppercase">segundos</span>
     </div>
   </div>
 </template>

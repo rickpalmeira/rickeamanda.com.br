@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <router-link to="/">
+  <router-link to="/" class="hover:*:drop-shadow-lg">
     <img
       :src="monogram"
       class="h-48 -mt-24 z-10"

@@ -7,7 +7,7 @@
   <div class="bg-[#fbfbfb] min-w-[294px]">
     <banner />
     <div
-      class="container px-6 pb-12 flex flex-col justify-between h-[60dvh] items-center mx-auto text-[#9f2d61] font-serif tracking-wide"
+      class="container px-6 pb-12 flex flex-col justify-between h-[60dvh] items-center mx-auto text-[#8E2957] font-serif tracking-wide"
     >
       <monogram />
       <router-view />

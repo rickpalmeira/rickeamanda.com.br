@@ -10,7 +10,7 @@
     <h2
       class="flex items-center uppercase text-lg tracking-widest font-semibold"
     >
-      <span class="border-y-2 px-2 border-[#e2acc8]">
+      <span class="border-y-2 px-2 border-[#DAADC6]">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">/08/</span>
         <span class="hidden sm:inline"> de Agosto de </span>
@@ -19,7 +19,7 @@
       <span class="h-auto w-14 pt-3 -ml-3 -mr-4 z-10" aria-hidden>
         <img :src="dateFlower" />
       </span>
-      <span class="border-y-2 px-2 border-[#e2acc8]">
+      <span class="border-y-2 px-2 border-[#DAADC6]">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">:00</span>
         <span class="hidden sm:inline"> Horas</span>
