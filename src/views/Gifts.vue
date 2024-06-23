@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import PageSplit from "../components/PageSplit.vue";
-  import Construction from "../components/Construction.vue";
 </script>
 
 <template>
@@ -10,5 +9,4 @@
   >
     Lista de Presentes
   </h2>
-  <construction />
 </template>

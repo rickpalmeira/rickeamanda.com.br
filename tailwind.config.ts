@@ -24,6 +24,9 @@ export default {
           200: "#b46b8f",
           100: "#daadc6",
         },
+        zinc: {
+          50: "#fbfbfb"
+        }
       },
     },
   },

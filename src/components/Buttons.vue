@@ -17,7 +17,7 @@
       :key="index"
     >
       <button
-        class="px-6 py-1 w-full uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full"
+        class="px-6 py-1 w-full uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full transition-colors transition-shadow"
         :id="'button-' + index"
       >
         {{ button.label }}

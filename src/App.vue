@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <div class="bg-[#fbfbfb] min-w-[294px] text-red-300 font-serif tracking-wide">
+  <div class="bg-zinc-50 min-w-[294px] text-red-300 font-serif tracking-wide">
     <back-to-top />
     <banner />
     <div
