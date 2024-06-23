@@ -1,9 +1,9 @@
 <script setup lang="ts">
   const buttons = [
-    { label: "Confirme sua presença", path: "/rsvp" },
-    { label: "Lista de Presentes", path: "/gifts" },
+    { label: "O Casal", path: "/couple" },
     { label: "Local da Cerimônia", path: "/location" },
-    { label: "Fotos", path: "/gallery" },
+    { label: "Lista de Presentes", path: "/gifts" },
+    { label: "Confirme sua presença", path: "/rsvp" },
   ];
 </script>
 
@@ -11,13 +11,13 @@
   <section class="flex flex-col items-stretch gap-2">
     <router-link
       :to="button.path"
-      active-class="*:bg-[#B7C2AB] *:text-white hover:*:text-[#2F8296]"
-      class="hover:*:bg-[#B7C2AB] hover:*:bg-opacity-50 hover:*:shadow-lg"
+      active-class="*:bg-green-100 *:text-white hover:*:text-blue-300"
+      class="hover:*:bg-green-100 hover:*:bg-opacity-50 hover:*:shadow-lg"
       v-for="(button, index) in buttons"
       :key="index"
     >
       <button
-        class="px-6 py-1 w-full uppercase tracking-normal text-sm border-[#94A285] border-2 text-[#2F8296] rounded-full"
+        class="px-6 py-1 w-full uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full"
         :id="'button-' + index"
       >
         {{ button.label }}
