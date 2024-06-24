@@ -1,12 +1,12 @@
 <script setup lang="ts">
-  import PageSplit from "../components/PageSplit.vue";
+  import pageBreak from "../components/PageBreak.vue";
   import Construction from "../components/Construction.vue";
 </script>
 
 <template>
-  <page-split />
+  <page-break />
   <h2
-    class="uppercase text-2xl tracking-widest whitespace-nowrap border-y-2 px-2 border-red-100"
+    class="uppercase text-2xl tracking-widest text-center border-b-2 px-2 border-red-100"
   >
     Confirmar Presença
   </h2>
