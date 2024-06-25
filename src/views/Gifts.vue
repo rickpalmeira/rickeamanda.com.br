@@ -1,38 +1,34 @@
 <script setup lang="ts">
   import pageBreak from "../components/PageBreak.vue";
   import GiftCard from "../components/GiftCard.vue";
+  import GiftCardPlaceholder from "../components/GiftCardPlaceholder.vue";
+  import { onMounted, ref } from "vue";
 
-  const giftList: {
-    name?: string;
-    price?: number;
-    thumbnail?: string;
-    url?: string;
-  }[] = [
-    {
-      name: "Presente 1",
-      price: 30000,
-      thumbnail: "https://via.placeholder.com/300",
-      url: "https://www.americanas.com.br/produto/1234567890",
-    },
-    {
-      name: "Presente 2",
-      price: 20000,
-      thumbnail: "https://via.placeholder.com/300",
-      url: "https://www.americanas.com.br/produto/1234567890",
-    },
-    {
-      name: "Presente 3",
-      price: 1999,
-      thumbnail: "https://via.placeholder.com/300",
-      url: "https://www.americanas.com.br/produto/1234567890",
-    },
-    {
-      name: "Presente 4",
-      price: 800000,
-      thumbnail: "https://via.placeholder.com/300",
-      url: "https://www.americanas.com.br/produto/1234567890",
-    },
-  ];
+  interface Gift {
+    id: number;
+    name: string;
+    price: number;
+    thumbnail: string;
+    url: string;
+  }
+
+  const giftList = ref<Gift[]>([]);
+  const isLoading = ref(true);
+
+  const getGiftList = async () => {
+    try {
+      const response = await fetch("https://api.rickeamanda.com.br/gifts"); /* TODO: move to .env file */
+      const data = await response.json();
+      giftList.value = data;
+      isLoading.value = false;
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  onMounted(() => {
+    getGiftList();
+  });
 </script>
 
 <template>
@@ -51,6 +47,12 @@
   <section
     class="flex flex-wrap gap-x-5 gap-y-14 xl:gap-y-12 2xl:gap-y-10 justify-evenly"
   >
-    <gift-card v-for="(item, index) in giftList" :key="index" v-bind="item" />
+    <gift-card-placeholder v-if="isLoading" v-for="_ in 20" />
+    <gift-card
+      v-else
+      v-for="(item, index) in giftList"
+      :key="index"
+      v-bind="item"
+    />
   </section>
 </template>
