@@ -26,7 +26,7 @@
     Local
   </h2>
   <div
-    class="flex flex-col md:flex-row w-full gap-6 items-center md:justify-start mb-20 md:mb-8"
+    class="flex flex-col md:flex-row w-full gap-6 items-center md:justify-start mb-20 md:mb-0"
   >
     <div
       class="h-80 w-80 sm:h-96 sm:w-96 my-3 sm:my-0 p-1 rounded-[100%] bg-green-300 shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
@@ -39,7 +39,7 @@
     <div
       class="flex flex-col justify-center gap-3 text-green-300 min-w-[16.25rem]"
     >
-      <h3 class="text-3xl uppercase font-bold tracking-widest md:-ml-6">
+      <h3 class="text-3xl uppercase font-bold tracking-widest md:-ml-4">
         Celebração
       </h3>
       <h4 class="text-2xl font-bold">Paróquia N. Sra. de Fátima</h4>
@@ -48,7 +48,7 @@
         St. Aeroporto, Goiânia<br />
         Goiânia - GO
       </p>
-      <div class="flex flex-row gap-2 md:-ml-6">
+      <div class="flex flex-row gap-2 md:-ml-4">
         <a href="https://maps.app.goo.gl/zk71FkAk5SA8knia8" target="_blank">
           <maps-icon
             alt="Google Maps"
@@ -98,7 +98,7 @@
     <div
       class="flex flex-col justify-center gap-3 text-red-300 min-w-[16.25rem] md:text-right"
     >
-      <h3 class="text-3xl uppercase font-bold tracking-widest md:-mr-6">
+      <h3 class="text-3xl uppercase font-bold tracking-widest md:-mr-4">
         Recepção
       </h3>
       <h4 class="text-2xl font-bold">Chácara Paris</h4>
@@ -107,7 +107,7 @@
         Residencial Santa Fé I<br />
         Goiânia - GO
       </p>
-      <div class="flex flex-row gap-2 md:-mr-6 md:justify-end">
+      <div class="flex flex-row gap-2 md:-mr-4 md:justify-end">
         <a href="https://maps.app.goo.gl/XSjTWyXxe6N5ae7j7" target="_blank">
           <maps-icon
             alt="Google Maps"
