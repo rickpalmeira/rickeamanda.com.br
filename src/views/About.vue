@@ -35,8 +35,10 @@
     sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
     molestias consequatur non delectus rem, numquam dolorem quaerat facere
     soluta tempora.
-  </p>
-  <p class="text-justify mb-8">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
+    sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
+    molestias consequatur non delectus rem, numquam dolorem quaerat facere
+    soluta tempora.
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
     sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
     molestias consequatur non delectus rem, numquam dolorem quaerat facere
