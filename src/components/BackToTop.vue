@@ -4,9 +4,12 @@
 
   const backToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setTimeout(() => {
-      router.replace({ path: "/" });
-    }, 1000);
+    const scrollOver = setInterval(() => {
+      if (scrollY.value === 0) {
+        clearInterval(scrollOver);
+        router.replace({ path: "/" });
+      }
+    }, 50);
   };
 
   const scrollY = ref(window.scrollY);
@@ -14,7 +17,7 @@
 
   const updateScroll = () => {
     scrollY.value = window.scrollY;
-    visible.value = scrollY.value >= window.innerHeight;
+    visible.value = scrollY.value >= window.innerHeight / 2;
   };
 
   onMounted(() => {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import BackToTop from "./components/BackToTop.vue";
+  import Toaster from "./components/Toaster.vue";
   import Banner from "./components/Banner.vue";
   import Buttons from "./components/Buttons.vue";
   import Countdown from "./components/Countdown.vue";
@@ -11,6 +12,7 @@
 <template>
   <div class="bg-zinc-50 min-w-[294px] text-red-300 font-serif tracking-wide">
     <back-to-top />
+    <toaster />
     <banner />
     <div
       class="container pb-2 px-6 flex flex-col justify-between items-center mx-auto min-h-[60dvh] *:mb-2"

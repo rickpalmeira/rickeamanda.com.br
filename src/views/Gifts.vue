@@ -17,7 +17,7 @@
 
   const getGiftList = async () => {
     try {
-      const response = await fetch("https://api.rickeamanda.com.br/gifts"); /* TODO: move to .env file */
+      const response = await fetch(import.meta.env.VITE_API_URL + "/gifts");
       const data = await response.json();
       giftList.value = data;
       isLoading.value = false;

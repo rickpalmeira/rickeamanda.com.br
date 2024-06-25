@@ -34,7 +34,11 @@
       >
         {{ format((price || 0) / 100, currencyConfig) }}
       </h4>
-      <a class="hover:*:bg-green-100 hover:*:bg-opacity-50 mb-2" :href="url">
+      <a
+        class="hover:*:bg-green-100 hover:*:bg-opacity-50 mb-2"
+        :href="url"
+        target="_blank"
+      >
         <button
           class="px-6 py-1 uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full transition-colors"
         >
