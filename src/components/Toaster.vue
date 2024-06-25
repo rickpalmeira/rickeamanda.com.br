@@ -5,9 +5,8 @@
   const hideToast = ref(false);
   onMounted(() => {
     setTimeout(() => {
-      console.log("hideToast");
       hideToast.value = true;
-    }, 5000);
+    }, 7000);
   });
 </script>
 
@@ -26,9 +25,7 @@
         <p v-if="useRoute().query.status === 'approved'">
           Seu pagamento já foi aprovado!
         </p>
-        <p v-if="useRoute().query.status === 'processing'">
-          Seu pagamento já está sendo processado!
-        </p>
+        <p v-else>Seu pagamento já está sendo processado!</p>
         <p>Muito obrigado pelo presente <span class="text-xl">♥♥</span></p>
       </div>
     </div>

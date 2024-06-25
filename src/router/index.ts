@@ -19,8 +19,8 @@ const routes: RouteRecordRaw[] = [
     component: (): Promise<Component> => import("../views/Location.vue"),
   },
   {
-    path: "/couple",
-    component: (): Promise<Component> => import("../views/Couple.vue"),
+    path: "/about",
+    component: (): Promise<Component> => import("../views/About.vue"),
   },
 ];
 

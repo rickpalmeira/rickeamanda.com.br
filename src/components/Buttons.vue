@@ -1,6 +1,6 @@
 <script setup lang="ts">
   const buttons = [
-    { label: "Sobre o casal", path: "/couple" },
+    { label: "Sobre o casal", path: "/about" },
     { label: "Local", path: "/location" },
     { label: "Lista de presentes", path: "/gifts" },
     { label: "Confirme sua presença", path: "/rsvp" },
