@@ -1,6 +1,7 @@
 <script setup lang="ts">
+  import flower from "../assets/flower-5.svg";
+  import rickEAmanda from "../assets/rick-e-amanda.webp";
   import pageBreak from "../components/PageBreak.vue";
-  import flower from "../assets/flower-frame.svg";
 </script>
 
 <template>
@@ -15,7 +16,7 @@
   >
     <div
       class="h-full w-full rounded-[100%] bg-cover bg-center flex justify-end items-end"
-      :style="{ backgroundImage: `url('img/about-couple.webp')` }"
+      :style="{ backgroundImage: `url(${rickEAmanda})` }"
     >
       <img
         :src="flower"
@@ -34,14 +35,12 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
     sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
     molestias consequatur non delectus rem, numquam dolorem quaerat facere
-    soluta tempora.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
-    sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
-    molestias consequatur non delectus rem, numquam dolorem quaerat facere
-    soluta tempora.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
-    sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
-    molestias consequatur non delectus rem, numquam dolorem quaerat facere
-    soluta tempora.
+    soluta tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Vero asperiores sunt cumque odit consequuntur rerum dolore dolor,
+    temporibus, architecto molestias consequatur non delectus rem, numquam
+    dolorem quaerat facere soluta tempora. Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Vero asperiores sunt cumque odit consequuntur
+    rerum dolore dolor, temporibus, architecto molestias consequatur non
+    delectus rem, numquam dolorem quaerat facere soluta tempora.
   </p>
 </template>

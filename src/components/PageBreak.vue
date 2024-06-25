@@ -4,11 +4,12 @@
   import flower2 from "../assets/flower-2.svg";
   import flower3 from "../assets/flower-3.svg";
   import flower4 from "../assets/flower-4.svg";
+  import flower5 from "../assets/flower-5.svg";
 
   const flower = ref<string>("");
 
   onMounted(() => {
-    const flowers = [flower1, flower2, flower3, flower4];
+    const flowers = [flower1, flower2, flower3, flower4, flower5];
     flower.value = flowers[Math.floor(Math.random() * flowers.length)];
   });
 </script>
