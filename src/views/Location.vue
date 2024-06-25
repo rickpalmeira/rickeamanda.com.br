@@ -31,7 +31,9 @@
         :style="{ backgroundImage: `url('img/celebracao.jpg')` }"
       ></div>
     </div>
-    <div class="flex flex-col justify-center gap-3 text-green-300">
+    <div
+      class="flex flex-col justify-center gap-3 text-green-300 min-w-[16.25rem]"
+    >
       <h3 class="text-3xl uppercase font-bold tracking-widest">Celebração</h3>
       <h4 class="text-2xl font-bold">Paróquia N. Sra. de Fátima</h4>
       <p class="text-lg">
@@ -115,7 +117,9 @@
         :style="{ backgroundImage: `url('img/recepcao.jpg')` }"
       ></div>
     </div>
-    <div class="flex flex-col justify-center gap-3 text-red-300 md:text-right">
+    <div
+      class="flex flex-col justify-center gap-3 text-red-300 min-w-[16.25rem] md:text-right"
+    >
       <h3 class="text-3xl uppercase font-bold tracking-widest">Recepção</h3>
       <h4 class="text-2xl font-bold">Chácara Paris</h4>
       <p class="text-lg">
