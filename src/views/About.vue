@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import pageBreak from "../components/PageBreak.vue";
-  import flower from "../assets/flower-2.svg";
+  import flower from "../assets/flower-frame.svg";
 </script>
 
 <template>
