@@ -2,7 +2,7 @@
   import { onMounted, ref } from "vue";
   import pageBreak from "../components/PageBreak.vue";
 
-  const isMobile = ref("");
+  const isMobile = ref(false);
 
   onMounted(() => {
     isMobile.value =
@@ -110,7 +110,7 @@
   <div class="flex-grow"></div>
   <div class="flex flex-col md:flex-row-reverse gap-6 items-center w-full">
     <div
-      class="h-80 w-80 sm:h-96 sm:w-96 m-3 sm:my-0 p-1 rounded-[100%] bg-red-300 shadow-lg hover:shadow-2xl hover:scale-110 transition-all"
+      class="h-80 w-80 sm:h-96 sm:w-96 sm:my-0 p-1 rounded-[100%] bg-red-300 shadow-lg hover:shadow-2xl hover:scale-110 transition-all"
     >
       <div
         class="h-full w-full rounded-[100%] bg-cover bg-center"
