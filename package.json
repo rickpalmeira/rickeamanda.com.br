@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "maska": "^3.0.0-beta4",
     "prettier": "^3.3.2",
     "v-money3": "^3.24.1",
     "vue": "^3.4.30",

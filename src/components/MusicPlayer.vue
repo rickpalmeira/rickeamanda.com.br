@@ -12,6 +12,7 @@
     } else {
       audioElement.pause();
     }
+    visible.value = !audioElement.paused;
     isPlaying.value = !audioElement.paused;
   };
 
@@ -20,7 +21,7 @@
 
     audioElement.loop = true;
     audioElement.volume = 0.5;
-    audioElement.play();
+    audioElement.play().catch(() => {});
 
     isPlaying.value = !audioElement.paused;
   });
@@ -34,7 +35,7 @@
   <div class="fixed bottom-14 right-1.5 md:bottom-16 p-4 z-50">
     <transition
       enter-from-class="translate-x-[150%] opacity-0"
-      leave-to-class="translate-x-[150%] opacity-0"
+      leave-to-class="translate-x-[150%] opacity-0 delay-[5s]"
       enter-active-class="transition duration-300 delay-[3s]"
       leave-active-class="transition duration-300"
       v-show="visible"

@@ -42,7 +42,7 @@
   <p class="text-justify text-blue-300 my-14">
     A presença de vocês é o nosso maior presente. Mas caso queiram nos
     presentear com algo mais, escolhemos algumas opções que podem ser
-    encontradas na lista abaixo
+    encontradas na lista abaixo:
   </p>
   <section
     class="flex flex-wrap gap-x-5 gap-y-14 xl:gap-y-12 2xl:gap-y-10 justify-evenly"

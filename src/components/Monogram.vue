@@ -6,7 +6,7 @@
   <router-link to="/" class="hover:*:drop-shadow-lg">
     <img
       :src="monogram"
-      class="h-48 -mt-24 z-10 transition-all"
+      class="h-48 -mt-28 z-10 transition-all"
       alt="Amanda e Rick"
       aria-hidden
     />
