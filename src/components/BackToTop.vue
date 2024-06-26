@@ -40,10 +40,10 @@
       v-show="visible"
     >
       <button
-        class="bg-blue-200 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+        class="bg-blue-200 text-white hover:bg-blue-100 hover:text-blue-300 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
         @click="backToTop"
       >
-        <arrow-up class="w-6 h-6 text-white" alt="Voltar ao topo" aria-hidden />
+        <arrow-up class="w-6 h-6" alt="Voltar ao topo" aria-hidden />
       </button>
     </transition>
   </div>

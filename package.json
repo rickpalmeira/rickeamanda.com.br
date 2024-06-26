@@ -9,14 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "howler": "^2.2.4",
     "prettier": "^3.3.2",
     "v-money3": "^3.24.1",
     "vue": "^3.4.30",
     "vue-router": "4.4.0"
   },
   "devDependencies": {
-    "@types/howler": "^2.2.11",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
