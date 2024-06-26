@@ -12,17 +12,9 @@
     children: [];
     number_of_children?: number;
     number_of_adults?: number;
-    adult_names?: [];
-    children_names?: [];
+    adult_names?: string[];
+    children_names?: boolean[];
   }
-
-  // :name,
-  // :phone_number,
-  // :attending,
-  // :number_of_adults,
-  // :number_of_children,
-  // adult_names: [],
-  // children_names: []
 
   const formData = reactive<FormData>({
     name: "",
@@ -43,11 +35,11 @@
     ).length;
 
     formData.adult_names = formData.companions.filter(
-      (companion, index) => !formData.children[index],
+      (_, index) => !formData.children[index],
     );
 
     formData.children_names = formData.companions.filter(
-      (companion, index) => formData.children[index],
+      (_, index) => !!formData.children[index],
     );
 
     const response = await fetch(import.meta.env.VITE_API_URL + "/rsvp", {
@@ -56,7 +48,9 @@
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-    });
+    }).catch(error => console.error(error));
+
+    console.info(await response);
   };
 </script>
 
