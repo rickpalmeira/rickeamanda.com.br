@@ -20,11 +20,13 @@
 
 <template>
   <div
-    class="flex flex-col min-w-60 w-1/2 sm:w-60 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow bg-white"
+    class="flex flex-col min-w-60 w-1/2 sm:w-60 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition bg-white"
   >
     <div
       class="h-48 w-full rounded-t-lg bg-cover bg-no-repeat bg-center"
-      :style="{ backgroundImage: `url(${thumbnail})` }"
+      :style="{
+        backgroundImage: `url(${thumbnail ?? 'https://http2.mlstatic.com/D_NQ_NP_2X_932000-MLB451000000_012021-F.webp'})`,
+      }"
       :alt="name"
     ></div>
     <div class="flex flex-col text-center justify-between min-h-48 gap-5 p-2">

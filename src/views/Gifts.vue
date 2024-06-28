@@ -5,10 +5,9 @@
   import { onMounted, ref } from "vue";
 
   interface Gift {
-    id: number;
     name: string;
     price: number;
-    thumbnail: string;
+    thumbnail?: string;
     url: string;
   }
 
@@ -40,19 +39,21 @@
   </h2>
 
   <p class="text-justify text-blue-300 my-14">
-    A presença de vocês é o nosso maior presente. Mas caso queiram nos
-    presentear com algo mais, escolhemos algumas opções que podem ser
+    A presença de vocês é o nosso maior presente. Mas, se desejarem nos
+    presentear de outra forma, selecionamos algumas opções que podem ser
     encontradas na lista abaixo:
   </p>
   <section
     class="flex flex-wrap gap-x-5 gap-y-14 xl:gap-y-12 2xl:gap-y-10 justify-evenly"
   >
-    <gift-card-placeholder v-if="isLoading" v-for="_ in 20" />
-    <gift-card
-      v-else
-      v-for="(item, index) in giftList"
-      :key="index"
-      v-bind="item"
-    />
+    <gift-card-placeholder v-if="isLoading" v-for="_ in 10" />
+    <template v-else>
+      <gift-card
+        name="O valor que seu coração mandar"
+        :price="0"
+        thumbnail="https://logowik.com/content/uploads/images/pix-banco-central8904.logowik.com.webp"
+      />
+      <gift-card v-for="(item, index) in giftList" :key="index" v-bind="item" />
+    </template>
   </section>
 </template>

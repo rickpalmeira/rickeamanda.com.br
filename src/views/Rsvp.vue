@@ -68,7 +68,7 @@
     selecione a opção de confirmação.
   </p>
 
-  <section class="w-full">
+  <section class="w-full" v-show="false">
     <form @submit.prevent="handleSubmit">
       <div class="grid grid-cols-1 gap-2">
         <div class="flex flex-col">
