@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { reactive } from "vue";
-  import pageBreak from "../components/PageBreak.vue";
+  import PageBreak from "../components/PageBreak.vue";
+  import Construction from "../components/Construction.vue";
   import { vMaska } from "maska/vue";
 
   interface FormData {
@@ -68,7 +69,7 @@
     selecione a opção de confirmação.
   </p>
 
-  <section class="w-full" v-show="false">
+  <!-- <section class="w-full">
     <form @submit.prevent="handleSubmit">
       <div class="grid grid-cols-1 gap-2">
         <div class="flex flex-col">
@@ -169,5 +170,6 @@
     class="w-full mt-10 bg-stone-100 border border-red-300 rounded-lg p-2 whitespace-pre-wrap"
   >
     {{ formData }}
-  </section>
+  </section> -->
+  <construction />
 </template>
