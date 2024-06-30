@@ -1,10 +1,11 @@
 <script setup lang="ts">
-  import pageBreak from "../components/PageBreak.vue";
+  import PageBreak from "../components/PageBreak.vue";
   import GiftCard from "../components/GiftCard.vue";
   import GiftCardPlaceholder from "../components/GiftCardPlaceholder.vue";
   import { onMounted, ref } from "vue";
 
   interface Gift {
+    id?: number;
     name: string;
     price: number;
     thumbnail?: string;
@@ -18,7 +19,7 @@
     try {
       const response = await fetch(import.meta.env.VITE_API_URL + "/gifts");
       const data = await response.json();
-      giftList.value = data;
+      giftList.value = data.sort((a: Gift, b: Gift) => a.price - b.price);
       isLoading.value = false;
     } catch (error) {
       console.error(error);
@@ -47,13 +48,11 @@
     class="flex flex-wrap gap-x-5 gap-y-14 xl:gap-y-12 2xl:gap-y-10 justify-evenly"
   >
     <gift-card-placeholder v-if="isLoading" v-for="_ in 10" />
-    <template v-else>
-      <gift-card
-        name="O valor que seu coração mandar"
-        :price="0"
-        thumbnail="https://logowik.com/content/uploads/images/pix-banco-central8904.logowik.com.webp"
-      />
-      <gift-card v-for="(item, index) in giftList" :key="index" v-bind="item" />
-    </template>
+    <gift-card
+      v-else
+      v-for="(item, index) in giftList"
+      :key="index"
+      v-bind="item"
+    />
   </section>
 </template>

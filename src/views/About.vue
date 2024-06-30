@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import flower from "../assets/flower-5.svg";
   import rickEAmanda from "../assets/rick-e-amanda.webp";
-  import pageBreak from "../components/PageBreak.vue";
+  import PageBreak from "../components/PageBreak.vue";
 </script>
 
 <template>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import { onMounted, ref } from "vue";
-  import pageBreak from "../components/PageBreak.vue";
-  import mapsIcon from "../components/icons/maps.vue";
-  import uberIcon from "../components/icons/uber.vue";
-  import wazeIcon from "../components/icons/waze.vue";
-  import instagramIcon from "../components/icons/instagram.vue";
+  import PageBreak from "../components/PageBreak.vue";
+  import MapsIcon from "../components/icons/maps.vue";
+  import UberIcon from "../components/icons/uber.vue";
+  import WazeIcon from "../components/icons/waze.vue";
+  import InstagramIcon from "../components/icons/instagram.vue";
   import celebracao from "../assets/celebracao.webp";
   import recepcao from "../assets/recepcao.webp";
 
