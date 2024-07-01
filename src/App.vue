@@ -11,7 +11,9 @@
 </script>
 
 <template>
-  <div class="bg-zinc-50 min-w-[294px] text-red-300 font-serif tracking-wide">
+  <div
+    class="bg-neutral-50 min-w-[294px] text-red-300 font-serif tracking-wide"
+  >
     <music-player />
     <back-to-top />
     <toaster />

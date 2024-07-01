@@ -25,7 +25,7 @@
     <div
       class="h-48 w-full rounded-t-lg bg-cover bg-no-repeat bg-center"
       :style="{
-        backgroundImage: `url(${thumbnail ?? 'https://http2.mlstatic.com/D_NQ_NP_2X_932000-MLB451000000_012021-F.webp'})`,
+        backgroundImage: `url(${'gifts/' + thumbnail})`,
       }"
       :alt="name"
     ></div>
