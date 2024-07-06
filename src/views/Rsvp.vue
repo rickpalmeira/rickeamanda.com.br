@@ -17,7 +17,7 @@
   </h2>
 
   <p class="max-w-[800px] text-justify text-blue-300 mt-14">
-    Sua presença é muito importante para nós, por favor, envie sua confirmação o
+    Sua presença é muito importante para nós. Por favor, envie sua confirmação o
     quanto antes no botão abaixo.
   </p>
   <section class="w-full flex flex-col justify-center items-center my-auto">
