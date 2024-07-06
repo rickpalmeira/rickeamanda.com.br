@@ -30,17 +30,22 @@
       />
     </div>
   </div>
-  <div class="flex-grow"></div>
-  <p class="text-justify my-14">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
-    sunt cumque odit consequuntur rerum dolore dolor, temporibus, architecto
-    molestias consequatur non delectus rem, numquam dolorem quaerat facere
-    soluta tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Vero asperiores sunt cumque odit consequuntur rerum dolore dolor,
-    temporibus, architecto molestias consequatur non delectus rem, numquam
-    dolorem quaerat facere soluta tempora. Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Vero asperiores sunt cumque odit consequuntur
-    rerum dolore dolor, temporibus, architecto molestias consequatur non
-    delectus rem, numquam dolorem quaerat facere soluta tempora.
-  </p>
+  <div class="flex-grow min-h-14"></div>
+  <div class="max-w-[800px] *:mb-4 *:text-justify">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, harum
+      minus. Pariatur quibusdam veniam, eveniet esse eum quae modi asperiores
+      delectus sint quaerat blanditiis tenetur, itaque amet ipsa? Dolores, id.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil hic
+      earum possimus repellendus, rem voluptas ratione nobis commodi dolorem
+      quas sapiente laborum odit nemo eaque delectus non, veniam minus!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, neque
+      tenetur. Dolore reiciendis quia nemo rem voluptas minima ad repellendus
+      quibusdam non enim ipsam laudantium autem at, saepe facere itaque.
+    </p>
+  </div>
 </template>
