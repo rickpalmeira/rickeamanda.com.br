@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="flex-grow min-h-14"></div>
-  <div class="max-w-[800px] *:mb-4 *:text-justify">
+  <div class="max-w-[800px] *:mb-4 last:*:mb-0 pb-20 *:text-justify">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, harum
       minus. Pariatur quibusdam veniam, eveniet esse eum quae modi asperiores
