@@ -2,6 +2,7 @@
   import flower from "../assets/flower-5.svg";
   import rickEAmanda from "../assets/rick-e-amanda.webp";
   import PageBreak from "../components/PageBreak.vue";
+  import Tooltip from "../components/Tooltip.vue";
 </script>
 
 <template>
@@ -33,19 +34,39 @@
   <div class="flex-grow min-h-14"></div>
   <div class="max-w-[800px] *:mb-4 last:*:mb-0 pb-20 *:text-justify">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, harum
-      minus. Pariatur quibusdam veniam, eveniet esse eum quae modi asperiores
-      delectus sint quaerat blanditiis tenetur, itaque amet ipsa? Dolores, id.
+      Nossa história começou em setembro de 2021, em meio a uma pandemia.
+      Durante um mês, apenas conversamos, ansiosos pelo momento em que
+      finalmente poderíamos nos encontrar. Éramos tão diferentes, com planos,
+      sonhos e gostos completamente opostos, mas aos poucos fomos nos
+      apaixonando. Descobrimos que, na verdade, queríamos a mesma coisa: ver o
+      outro feliz.
     </p>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil hic
-      earum possimus repellendus, rem voluptas ratione nobis commodi dolorem
-      quas sapiente laborum odit nemo eaque delectus non, veniam minus!
+      Começamos a namorar em dezembro de 2021 e, desde então, temos lutado
+      juntos para realizar nossos sonhos e construir nossa família. Em outubro
+      de 2023, demos mais um passo importante e ficamos noivos.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, neque
-      tenetur. Dolore reiciendis quia nemo rem voluptas minima ad repellendus
-      quibusdam non enim ipsam laudantium autem at, saepe facere itaque.
+      Gostamos de música, viajar, ficar em casa vendo filmes ou jogando
+      videogame. Adoramos ir a shows e realizar muitos sonhos juntos. Temos dois
+      cachorros, <tooltip image="jade.png">Jade</tooltip> e
+      <tooltip image="zero.png">Zero</tooltip>, que trazem ainda mais alegria
+      aos nossos dias. Amamos receber nossos amigos e família em casa, mas
+      também gostamos muito de sair e explorar novos lugares.
     </p>
+    <p>
+      Nosso casamento é a celebração de um sonho sonhado juntos, planejado com
+      carinho e atenção a cada detalhe. Tudo aqui foi pensado para contar a
+      nossa história e refletir o que amamos. A identidade visual foi toda
+      inspirada no quadro
+      <tooltip image="painting.png">Amendoeiras em Flor</tooltip> de Van Gogh,
+      nossa obra de arte preferida.
+    </p>
+    <p>
+      Estamos muito felizes e empolgados por termos encontrado o amor das nossas
+      vidas, e vai ser maravilhoso poder compartilhar esse momento especial com
+      vocês.
+    </p>
+    <p>Estamos ansiosos para celebrar nosso amor com todos vocês!</p>
   </div>
 </template>
