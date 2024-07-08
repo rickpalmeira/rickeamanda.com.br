@@ -11,7 +11,7 @@ import {
 } from "@floating-ui/vue";
 import { ComputePositionReturn } from "@floating-ui/core";
 
-defineProps<{ image?: string; text?: string }>();
+defineProps<{ image: string }>();
 
 const tool = ref();
 const tip = ref();
@@ -72,11 +72,17 @@ onBeforeUnmount(() => {
     <slot></slot>
     <div
       ref="tip"
-      class="pointer-events-none absolute z-10 rounded-lg bg-cyan-300 p-1.5 text-white shadow-lg transition-opacity delay-300 ease-in-out"
+      class="pointer-events-none absolute z-10 rounded-[100%] bg-cyan-300 p-1.5 text-white shadow-lg transition-opacity delay-300 ease-in-out"
     >
-      <img v-if="!!image" :src="'/' + image" class="w-[20vw] rounded-lg" />
-      <p v-if="!!text" class="text-sm">{{ text }}</p>
-      <div class="absolute h-2 w-2 rotate-45 bg-cyan-300" ref="tipArrow"></div>
+      <img
+        v-if="!!image"
+        :src="'/' + image"
+        class="w-[70vw] rounded-[100%] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw]"
+      />
+      <div
+        class="absolute hidden h-2 w-2 rotate-45 bg-cyan-300 md:block"
+        ref="tipArrow"
+      ></div>
     </div>
   </a>
 </template>
