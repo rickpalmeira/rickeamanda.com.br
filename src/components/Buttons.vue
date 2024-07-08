@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  const buttons = [
-    { label: "Sobre o casal", path: "/about" },
-    { label: "Local", path: "/location" },
-    { label: "Lista de presentes", path: "/gifts" },
-    { label: "Confirme sua presença", path: "/rsvp" },
-  ];
+const buttons = [
+  { label: "Sobre o casal", path: "/about" },
+  { label: "Local", path: "/location" },
+  { label: "Lista de presentes", path: "/gifts" },
+  { label: "Confirme sua presença", path: "/rsvp" },
+];
 </script>
 
 <template>
@@ -17,7 +17,7 @@
       :key="index"
     >
       <button
-        class="px-6 py-1 w-full uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full transition-colors"
+        class="w-full rounded-full border-2 border-green-200 px-6 py-1 text-sm uppercase tracking-normal text-blue-300 transition-colors"
         :id="'button-' + index"
       >
         {{ button.label }}

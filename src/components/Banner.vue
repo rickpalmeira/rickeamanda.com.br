@@ -1,23 +1,23 @@
 <script setup lang="ts">
-  import bannerImg from "../assets/banner.webp";
-  import flowerTopLeft from "../assets/flower-top-left.svg";
-  import flowerTopRight from "../assets/flower-top-right.svg";
+import bannerImg from "../assets/banner.webp";
+import flowerTopLeft from "../assets/flower-top-left.svg";
+import flowerTopRight from "../assets/flower-top-right.svg";
 </script>
 
 <template>
   <header
     :style="`background-image: url(${bannerImg})`"
-    class="bg-no-repeat bg-bottom bg-cover h-[40dvh] lg:h-[45dvh] lg:-mb-[5dvh] xl:h-[50dvh] xl:-mb-[10dvh] 2xl:h-[55dvh] 2xl:-mb-[15dvh]"
+    class="h-[40dvh] bg-cover bg-bottom bg-no-repeat lg:-mb-[5dvh] lg:h-[45dvh] xl:-mb-[10dvh] xl:h-[50dvh] 2xl:-mb-[15dvh] 2xl:h-[55dvh]"
   >
-    <div class="absolute max-h-96 overflow-hidden flex justify-between w-dvw">
+    <div class="absolute flex max-h-96 w-dvw justify-between overflow-hidden">
       <img
         :src="flowerTopLeft"
-        class="max-w-[50vw] -mt-24 -ml-10"
+        class="-ml-10 -mt-24 max-w-[50vw]"
         aria-hidden
       />
       <img
         :src="flowerTopRight"
-        class="max-w-[50vw] -mt-24 -mr-5 md:-mr-10 lg:-mr-32 xl:-mr-40 2xl:-mr-80"
+        class="-mr-5 -mt-24 max-w-[50vw] md:-mr-10 lg:-mr-32 xl:-mr-40 2xl:-mr-80"
         aria-hidden
       />
     </div>

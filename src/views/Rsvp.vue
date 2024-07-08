@@ -1,30 +1,30 @@
 <script setup lang="ts">
-  import PageBreak from "../components/PageBreak.vue";
+import PageBreak from "../components/PageBreak.vue";
 
-  const rsvp_url =
-    "https://assessoriavip.com.br/rsvpUnico/" + import.meta.env.VITE_EVENT_HASH;
+const rsvp_url =
+  "https://assessoriavip.com.br/rsvpUnico/" + import.meta.env.VITE_EVENT_HASH;
 
-  const contact_url =
-    "https://web.whatsapp.com/send/?phone=" + import.meta.env.VITE_PHONE_NUMBER;
+const contact_url =
+  "https://web.whatsapp.com/send/?phone=" + import.meta.env.VITE_PHONE_NUMBER;
 </script>
 
 <template>
   <page-break />
   <h2
-    class="uppercase text-2xl tracking-widest text-center border-b-2 px-2 border-red-100"
+    class="border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
   >
     Confirmação de presença
   </h2>
 
-  <p class="max-w-[800px] text-justify text-blue-300 mt-14">
+  <p class="mt-14 max-w-[800px] text-justify text-blue-300">
     Sua presença é muito importante para nós. Por favor, envie sua confirmação o
     quanto antes no botão abaixo.
   </p>
-  <section class="w-full flex flex-col justify-center items-center my-auto">
+  <section class="my-auto flex w-full flex-col items-center justify-center">
     <a
       :href="rsvp_url"
       target="_blank"
-      class="bg-blue-100 border-blue-300 border-2 text-white text-md sm:text-xl font-bold px-6 py-1 mb-10 uppercase tracking-wider rounded-full shadow-md hover:shadow-xl hover:bg-blue-300 transition"
+      class="text-md mb-10 rounded-full border-2 border-blue-300 bg-blue-100 px-6 py-1 font-bold uppercase tracking-wider text-white shadow-md transition hover:bg-blue-300 hover:shadow-xl sm:text-xl"
     >
       Confirmar Presença
     </a>
@@ -32,7 +32,7 @@
       Alguma dúvida? Entre em contato com
       <a
         :href="contact_url"
-        class="underline text-blue-300 hover:decoration-red-300 hover:text-red-200"
+        class="text-blue-300 underline hover:text-red-200 hover:decoration-red-300"
       >
         os noivos
       </a>

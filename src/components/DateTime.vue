@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import dateFlower from "../assets/flower-date.svg";
+import dateFlower from "../assets/flower-date.svg";
 </script>
 
 <template>
@@ -8,18 +8,18 @@
     target="_blank"
   >
     <h2
-      class="flex items-center uppercase text-lg tracking-widest font-semibold"
+      class="flex items-center text-lg font-semibold uppercase tracking-widest"
     >
-      <span class="border-y-2 px-2 border-red-100">
+      <span class="border-y-2 border-red-100 px-2">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">/08/</span>
         <span class="hidden sm:inline"> de Agosto de </span>
         <span class="text-3xl font-normal">2024</span>
       </span>
-      <span class="h-auto w-14 pt-3 -ml-3 -mr-4 z-10" aria-hidden>
+      <span class="z-10 -ml-3 -mr-4 h-auto w-14 pt-3" aria-hidden>
         <img :src="dateFlower" />
       </span>
-      <span class="border-y-2 px-2 border-red-100">
+      <span class="border-y-2 border-red-100 px-2">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">:00</span>
         <span class="hidden sm:inline"> Horas</span>

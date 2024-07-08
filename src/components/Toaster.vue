@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import { onMounted, ref } from "vue";
-  import { useRoute } from "vue-router";
+import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
-  const hideToast = ref(false);
-  onMounted(() => {
-    setTimeout(() => {
-      hideToast.value = true;
-    }, 7000);
-  });
+const hideToast = ref(false);
+onMounted(() => {
+  setTimeout(() => {
+    hideToast.value = true;
+  }, 7000);
+});
 </script>
 
 <template>
@@ -19,7 +19,7 @@
     v-show="useRoute().query.status && !hideToast"
   >
     <div
-      class="fixed z-50 top-10 right-10 p-8 rounded-lg shadow-lg bg-blue-300 text-white text-lg tracking-wide"
+      class="fixed right-10 top-10 z-50 rounded-lg bg-blue-300 p-8 text-lg tracking-wide text-white shadow-lg"
     >
       <div>
         <p v-if="useRoute().query.status === 'approved'">

@@ -1,35 +1,35 @@
 <script setup lang="ts">
-  import { onMounted, ref } from "vue";
-  import PageBreak from "../components/PageBreak.vue";
-  import MapsIcon from "../components/icons/maps.vue";
-  import UberIcon from "../components/icons/uber.vue";
-  import WazeIcon from "../components/icons/waze.vue";
-  import InstagramIcon from "../components/icons/instagram.vue";
-  import celebracao from "../assets/celebracao.webp";
-  import recepcao from "../assets/recepcao.webp";
+import { onMounted, ref } from "vue";
+import PageBreak from "../components/PageBreak.vue";
+import MapsIcon from "../components/icons/maps.vue";
+import UberIcon from "../components/icons/uber.vue";
+import WazeIcon from "../components/icons/waze.vue";
+import InstagramIcon from "../components/icons/instagram.vue";
+import celebracao from "../assets/celebracao.webp";
+import recepcao from "../assets/recepcao.webp";
 
-  const isMobile = ref(false);
+const isMobile = ref(false);
 
-  onMounted(() => {
-    isMobile.value =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent,
-      );
-  });
+onMounted(() => {
+  isMobile.value =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent,
+    );
+});
 </script>
 
 <template>
   <page-break />
   <h2
-    class="uppercase text-2xl tracking-widest text-center border-b-2 px-2 mb-8 border-red-100"
+    class="mb-8 border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
   >
     Local
   </h2>
   <div
-    class="flex flex-col md:flex-row w-full gap-6 items-center md:justify-start mb-20 md:mb-0"
+    class="mb-20 flex w-full flex-col items-center gap-6 md:mb-0 md:flex-row md:justify-start"
   >
     <div
-      class="h-80 w-80 sm:h-96 sm:w-96 my-3 sm:my-0 p-1 rounded-[100%] bg-green-300 shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
+      class="my-3 h-80 w-80 rounded-[100%] bg-green-300 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
     >
       <div
         class="h-full w-full rounded-[100%] bg-cover bg-center"
@@ -37,9 +37,9 @@
       ></div>
     </div>
     <div
-      class="flex flex-col justify-center gap-3 text-green-300 min-w-[16.25rem]"
+      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-green-300"
     >
-      <h3 class="text-3xl uppercase font-bold tracking-widest md:-ml-4">
+      <h3 class="text-3xl font-bold uppercase tracking-widest md:-ml-4">
         Celebração
       </h3>
       <h4 class="text-2xl font-bold">Paróquia N. Sra. de Fátima</h4>
@@ -52,7 +52,7 @@
         <a href="https://maps.app.goo.gl/zk71FkAk5SA8knia8" target="_blank">
           <maps-icon
             alt="Google Maps"
-            class="h-10 w-10 p-0.5 border-green-300 border-2 rounded-full hover:bg-green-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-green-300 p-0.5 transition-colors hover:bg-green-300 hover:text-white"
           />
         </a>
         <a
@@ -61,7 +61,7 @@
         >
           <waze-icon
             alt="Waze"
-            class="h-10 w-10 p-0.5 border-green-300 border-2 rounded-full hover:bg-green-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-green-300 p-0.5 transition-colors hover:bg-green-300 hover:text-white"
           />
         </a>
         <a
@@ -73,22 +73,22 @@
         >
           <uber-icon
             alt="Uber"
-            class="h-10 w-10 p-1 border-green-300 border-2 rounded-full hover:bg-green-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-green-300 p-1 transition-colors hover:bg-green-300 hover:text-white"
           />
         </a>
         <a href="https://www.instagram.com/pnsfatimago" target="_blank">
           <instagram-icon
             alt="Instagram"
-            class="h-10 w-10 p-1 border-green-300 border-2 rounded-full hover:bg-green-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-green-300 p-1 transition-colors hover:bg-green-300 hover:text-white"
           />
         </a>
       </div>
     </div>
   </div>
   <div class="flex-grow"></div>
-  <div class="flex flex-col md:flex-row-reverse gap-6 items-center w-full">
+  <div class="flex w-full flex-col items-center gap-6 md:flex-row-reverse">
     <div
-      class="h-80 w-80 sm:h-96 sm:w-96 sm:my-0 p-1 rounded-[100%] bg-red-300 shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
+      class="h-80 w-80 rounded-[100%] bg-red-300 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
     >
       <div
         class="h-full w-full rounded-[100%] bg-cover bg-center"
@@ -96,9 +96,9 @@
       ></div>
     </div>
     <div
-      class="flex flex-col justify-center gap-3 text-red-300 min-w-[16.25rem] md:text-right"
+      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-red-300 md:text-right"
     >
-      <h3 class="text-3xl uppercase font-bold tracking-widest md:-mr-4">
+      <h3 class="text-3xl font-bold uppercase tracking-widest md:-mr-4">
         Recepção
       </h3>
       <h4 class="text-2xl font-bold">Chácara Paris</h4>
@@ -111,7 +111,7 @@
         <a href="https://maps.app.goo.gl/XSjTWyXxe6N5ae7j7" target="_blank">
           <maps-icon
             alt="Google Maps"
-            class="h-10 w-10 p-0.5 border-red-300 border-2 rounded-full hover:bg-red-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-red-300 p-0.5 transition-colors hover:bg-red-300 hover:text-white"
           />
         </a>
         <a
@@ -120,7 +120,7 @@
         >
           <waze-icon
             alt="Waze"
-            class="h-10 w-10 p-0.5 border-red-300 border-2 rounded-full hover:bg-red-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-red-300 p-0.5 transition-colors hover:bg-red-300 hover:text-white"
           />
         </a>
         <a
@@ -132,13 +132,13 @@
         >
           <uber-icon
             alt="Uber"
-            class="h-10 w-10 p-1 border-red-300 border-2 rounded-full hover:bg-red-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-red-300 p-1 transition-colors hover:bg-red-300 hover:text-white"
           />
         </a>
         <a href="https://www.instagram.com/chacara_paris" target="_blank">
           <instagram-icon
             alt="Instagram"
-            class="h-10 w-10 p-1 border-red-300 border-2 rounded-full hover:bg-red-300 hover:text-white transition-colors"
+            class="h-10 w-10 rounded-full border-2 border-red-300 p-1 transition-colors hover:bg-red-300 hover:text-white"
           />
         </a>
       </div>

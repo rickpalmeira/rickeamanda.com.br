@@ -1,48 +1,48 @@
 <script setup lang="ts">
-  import { format } from "v-money3";
+import { format } from "v-money3";
 
-  defineProps<{
-    name?: string;
-    price?: number;
-    thumbnail?: string;
-    url?: string;
-  }>();
+defineProps<{
+  name?: string;
+  price?: number;
+  thumbnail?: string;
+  url?: string;
+}>();
 
-  const currencyConfig = {
-    prefix: "R$ ",
-    suffix: "",
-    decimal: ",",
-    thousands: ".",
-    precision: 2,
-    masked: false,
-  };
+const currencyConfig = {
+  prefix: "R$ ",
+  suffix: "",
+  decimal: ",",
+  thousands: ".",
+  precision: 2,
+  masked: false,
+};
 </script>
 
 <template>
   <div
-    class="flex flex-col min-w-60 w-1/2 sm:w-60 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition bg-white"
+    class="flex w-1/2 min-w-60 flex-col rounded-lg bg-white shadow-lg transition hover:scale-105 hover:shadow-2xl sm:w-60 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6"
   >
     <div
-      class="h-48 w-full rounded-t-lg bg-cover bg-no-repeat bg-center"
+      class="h-48 w-full rounded-t-lg bg-cover bg-center bg-no-repeat"
       :style="{
         backgroundImage: `url(${'gifts/' + thumbnail})`,
       }"
       :alt="name"
     ></div>
-    <div class="flex flex-col text-center justify-between min-h-48 gap-5 p-2">
-      <h3 class="font-bold text-md text-center px-6">{{ name }}</h3>
+    <div class="flex min-h-48 flex-col justify-between gap-5 p-2 text-center">
+      <h3 class="text-md px-6 text-center font-bold">{{ name }}</h3>
       <h4
-        class="font-bold text-2xl text-center px-6 tracking-normal text-blue-300"
+        class="px-6 text-center text-2xl font-bold tracking-normal text-blue-300"
       >
         {{ format((price || 0) / 100, currencyConfig) }}
       </h4>
       <a
-        class="hover:*:bg-green-100 hover:*:bg-opacity-50 mb-2"
+        class="mb-2 hover:*:bg-green-100 hover:*:bg-opacity-50"
         :href="url"
         target="_blank"
       >
         <button
-          class="px-6 py-1 uppercase tracking-normal text-sm border-green-200 border-2 text-blue-300 rounded-full transition-colors"
+          class="rounded-full border-2 border-green-200 px-6 py-1 text-sm uppercase tracking-normal text-blue-300 transition-colors"
         >
           Presentear
         </button>

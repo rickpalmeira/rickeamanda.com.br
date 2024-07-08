@@ -1,25 +1,25 @@
 <script setup lang="ts">
-  import BackToTop from "./components/BackToTop.vue";
-  import Toaster from "./components/Toaster.vue";
-  import MusicPlayer from "./components/MusicPlayer.vue";
-  import Banner from "./components/Banner.vue";
-  import Buttons from "./components/Buttons.vue";
-  import Countdown from "./components/Countdown.vue";
-  import DateTime from "./components/DateTime.vue";
-  import Monogram from "./components/Monogram.vue";
-  import { useRoute } from "vue-router";
+import BackToTop from "./components/BackToTop.vue";
+import Toaster from "./components/Toaster.vue";
+import MusicPlayer from "./components/MusicPlayer.vue";
+import Banner from "./components/Banner.vue";
+import Buttons from "./components/Buttons.vue";
+import Countdown from "./components/Countdown.vue";
+import DateTime from "./components/DateTime.vue";
+import Monogram from "./components/Monogram.vue";
+import { useRoute } from "vue-router";
 </script>
 
 <template>
   <div
-    class="bg-neutral-50 min-w-[294px] text-red-300 font-serif tracking-wide"
+    class="min-w-[294px] bg-neutral-50 font-serif tracking-wide text-red-300"
   >
     <music-player />
     <back-to-top />
     <toaster />
     <banner />
     <div
-      class="container pb-2 px-6 flex flex-col justify-between items-center mx-auto min-h-[60dvh] *:mb-2"
+      class="container mx-auto flex min-h-[60dvh] flex-col items-center justify-between px-6 pb-2 *:mb-2"
     >
       <monogram />
       <date-time />
@@ -27,7 +27,7 @@
       <buttons />
     </div>
     <div
-      class="container p-6 pt-0 flex flex-col justify-start items-center mx-auto min-h-[100dvh]"
+      class="container mx-auto flex min-h-[100dvh] flex-col items-center justify-start p-6 pt-0"
       id="content"
       v-if="useRoute().fullPath !== '/'"
     >

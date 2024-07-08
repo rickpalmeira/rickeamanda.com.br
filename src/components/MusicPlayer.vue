@@ -1,38 +1,38 @@
 <script setup lang="ts">
-  import { onMounted, onUnmounted, ref } from "vue";
-  import song from "../assets/song.mp3";
+import { onMounted, onUnmounted, ref } from "vue";
+import song from "../assets/song.mp3";
 
-  const audioElement = new Audio(song);
-  const isPlaying = ref(false);
-  const visible = ref(false);
+const audioElement = new Audio(song);
+const isPlaying = ref(false);
+const visible = ref(false);
 
-  const playOrPause = () => {
-    if (audioElement.paused) {
-      audioElement.play();
-    } else {
-      audioElement.pause();
-    }
-    visible.value = !audioElement.paused;
-    isPlaying.value = !audioElement.paused;
-  };
-
-  onMounted(() => {
-    visible.value = true;
-
-    audioElement.loop = true;
-    audioElement.volume = 0.5;
-    audioElement.play().catch(() => {});
-
-    isPlaying.value = !audioElement.paused;
-  });
-
-  onUnmounted(() => {
+const playOrPause = () => {
+  if (audioElement.paused) {
+    audioElement.play();
+  } else {
     audioElement.pause();
-  });
+  }
+  visible.value = !audioElement.paused;
+  isPlaying.value = !audioElement.paused;
+};
+
+onMounted(() => {
+  visible.value = true;
+
+  audioElement.loop = true;
+  audioElement.volume = 0.5;
+  audioElement.play().catch(() => {});
+
+  isPlaying.value = !audioElement.paused;
+});
+
+onUnmounted(() => {
+  audioElement.pause();
+});
 </script>
 
 <template>
-  <div class="fixed bottom-14 right-1.5 md:bottom-16 p-4 z-50">
+  <div class="fixed bottom-14 right-1.5 z-50 p-4 md:bottom-16">
     <transition
       enter-from-class="translate-x-[150%] opacity-0"
       leave-to-class="translate-x-[150%] opacity-0 delay-[5s]"
@@ -41,7 +41,7 @@
       v-show="visible"
     >
       <button
-        class="bg-blue-200 text-white hover:bg-blue-100 hover:text-blue-300 rounded-full w-7 h-7 md:w-9 md:h-9 flex items-center justify-center"
+        class="flex h-7 w-7 items-center justify-center rounded-full bg-blue-200 text-white hover:bg-blue-100 hover:text-blue-300 md:h-9 md:w-9"
         @click="playOrPause"
       >
         <svg
