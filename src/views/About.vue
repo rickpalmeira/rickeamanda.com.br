@@ -49,8 +49,8 @@
     <p>
       Gostamos de música, viajar, ficar em casa vendo filmes ou jogando
       videogame. Adoramos ir a shows e realizar muitos sonhos juntos. Temos dois
-      cachorros, <tooltip image="jade.png">Jade</tooltip> e
-      <tooltip image="zero.png">Zero</tooltip>, que trazem ainda mais alegria
+      cachorros, <tooltip image="jade.webp">Jade</tooltip> e
+      <tooltip image="zero.webp">Zero</tooltip>, que trazem ainda mais alegria
       aos nossos dias. Amamos receber nossos amigos e família em casa, mas
       também gostamos muito de sair e explorar novos lugares.
     </p>
@@ -59,7 +59,7 @@
       carinho e atenção a cada detalhe. Tudo aqui foi pensado para contar a
       nossa história e refletir o que amamos. A identidade visual foi toda
       inspirada no quadro
-      <tooltip image="painting.png">Amendoeiras em Flor</tooltip> de Van Gogh,
+      <tooltip image="painting.webp">Amendoeiras em Flor</tooltip> de Van Gogh,
       nossa obra de arte preferida.
     </p>
     <p>

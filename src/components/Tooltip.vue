@@ -65,7 +65,7 @@
 
 <template>
   <a
-    class="underline font-bold cursor-help *:opacity-0 *:hover:opacity-95 *:focus:opacity-95"
+    class="underline font-bold cursor-help inline-block *:opacity-0 *:hover:opacity-95 *:focus:opacity-95"
     ref="tool"
     tabindex="0"
   >
