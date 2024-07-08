@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
       v-show="visible"
     >
       <button
-        class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-200 text-white hover:bg-blue-100 hover:text-blue-300 md:h-12 md:w-12"
+        class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500 text-white hover:bg-cyan-300 hover:text-cyan-700 md:h-12 md:w-12"
         @click="backToTop"
       >
         <arrow-up class="h-6 w-6" alt="Voltar ao topo" aria-hidden />

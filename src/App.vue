@@ -12,7 +12,7 @@ import { useRoute } from "vue-router";
 
 <template>
   <div
-    class="min-w-[294px] bg-neutral-50 font-serif tracking-wide text-red-300"
+    class="min-w-[294px] bg-neutral-50 font-serif tracking-wide text-rose-700"
   >
     <music-player />
     <back-to-top />

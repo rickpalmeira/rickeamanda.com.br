@@ -8,12 +8,12 @@ import Tooltip from "../components/Tooltip.vue";
 <template>
   <page-break />
   <h2
-    class="border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
+    class="border-b-2 border-rose-300 px-2 text-center text-2xl uppercase tracking-widest"
   >
     O casal
   </h2>
   <div
-    class="mt-10 aspect-[0.84256] w-4/5 rounded-[100%] bg-blue-300 p-1 shadow-lg sm:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3"
+    class="mt-10 aspect-[0.84256] w-4/5 rounded-[100%] bg-cyan-700 p-1 shadow-lg sm:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3"
   >
     <div
       class="flex h-full w-full items-end justify-end rounded-[100%] bg-cover bg-center"

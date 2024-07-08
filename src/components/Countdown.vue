@@ -21,31 +21,31 @@ onMounted(() => {
 
 <template>
   <div
-    class="flex w-full justify-around border-y-2 border-red-100 sm:w-auto sm:justify-center sm:gap-12 sm:px-4"
+    class="flex w-full justify-around border-y-2 border-rose-300 sm:w-auto sm:justify-center sm:gap-12 sm:px-4"
   >
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor(timeDiff / (1000 * 60 * 60 * 24)) }}
       </span>
-      <span class="uppercase text-blue-300">dias</span>
+      <span class="uppercase text-cyan-700">dias</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / (1000 * 60 * 60)) % 24) }}
       </span>
-      <span class="uppercase text-blue-300">horas</span>
+      <span class="uppercase text-cyan-700">horas</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / (1000 * 60)) % 60) }}
       </span>
-      <span class="uppercase text-blue-300">minutos</span>
+      <span class="uppercase text-cyan-700">minutos</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
         {{ Math.floor((timeDiff / 1000) % 60) }}
       </span>
-      <span class="uppercase text-blue-300">segundos</span>
+      <span class="uppercase text-cyan-700">segundos</span>
     </div>
   </div>
 </template>

@@ -11,12 +11,12 @@ const contact_url =
 <template>
   <page-break />
   <h2
-    class="border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
+    class="border-b-2 border-rose-300 px-2 text-center text-2xl uppercase tracking-widest"
   >
     Confirmação de presença
   </h2>
 
-  <p class="mt-14 max-w-[800px] text-justify text-blue-300">
+  <p class="mt-14 max-w-[800px] text-justify text-cyan-700">
     Sua presença é muito importante para nós. Por favor, envie sua confirmação o
     quanto antes no botão abaixo.
   </p>
@@ -24,7 +24,7 @@ const contact_url =
     <a
       :href="rsvp_url"
       target="_blank"
-      class="text-md mb-10 rounded-full border-2 border-blue-300 bg-blue-100 px-6 py-1 font-bold uppercase tracking-wider text-white shadow-md transition hover:bg-blue-300 hover:shadow-xl sm:text-xl"
+      class="text-md mb-10 rounded-full border-2 border-cyan-700 bg-cyan-300 px-6 py-1 font-bold uppercase tracking-wider text-white shadow-md transition hover:bg-cyan-700 hover:shadow-xl sm:text-xl"
     >
       Confirmar Presença
     </a>
@@ -32,7 +32,7 @@ const contact_url =
       Alguma dúvida? Entre em contato com
       <a
         :href="contact_url"
-        class="text-blue-300 underline hover:text-red-200 hover:decoration-red-300"
+        class="text-cyan-700 underline hover:text-rose-500 hover:decoration-rose-700"
       >
         os noivos
       </a>

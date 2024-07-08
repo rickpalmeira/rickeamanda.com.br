@@ -72,11 +72,11 @@ onBeforeUnmount(() => {
     <slot></slot>
     <div
       ref="tip"
-      class="pointer-events-none absolute z-10 rounded-lg bg-blue-100 p-1.5 text-white shadow-lg transition-opacity delay-300 ease-in-out"
+      class="pointer-events-none absolute z-10 rounded-lg bg-cyan-300 p-1.5 text-white shadow-lg transition-opacity delay-300 ease-in-out"
     >
       <img v-if="!!image" :src="'/' + image" class="w-[20vw] rounded-lg" />
       <p v-if="!!text" class="text-sm">{{ text }}</p>
-      <div class="absolute h-2 w-2 rotate-45 bg-blue-100" ref="tipArrow"></div>
+      <div class="absolute h-2 w-2 rotate-45 bg-cyan-300" ref="tipArrow"></div>
     </div>
   </a>
 </template>

@@ -32,17 +32,17 @@ const currencyConfig = {
     <div class="flex min-h-48 flex-col justify-between gap-5 p-2 text-center">
       <h3 class="text-md px-6 text-center font-bold">{{ name }}</h3>
       <h4
-        class="px-6 text-center text-2xl font-bold tracking-normal text-blue-300"
+        class="px-6 text-center text-2xl font-bold tracking-normal text-cyan-700"
       >
         {{ format((price || 0) / 100, currencyConfig) }}
       </h4>
       <a
-        class="mb-2 hover:*:bg-green-100 hover:*:bg-opacity-50"
+        class="mb-2 hover:*:bg-emerald-300 hover:*:bg-opacity-50"
         :href="url"
         target="_blank"
       >
         <button
-          class="rounded-full border-2 border-green-200 px-6 py-1 text-sm uppercase tracking-normal text-blue-300 transition-colors"
+          class="rounded-full border-2 border-emerald-500 px-6 py-1 text-sm uppercase tracking-normal text-cyan-700 transition-colors"
         >
           Presentear
         </button>

@@ -41,7 +41,7 @@ onUnmounted(() => {
       v-show="visible"
     >
       <button
-        class="flex h-7 w-7 items-center justify-center rounded-full bg-blue-200 text-white hover:bg-blue-100 hover:text-blue-300 md:h-9 md:w-9"
+        class="flex h-7 w-7 items-center justify-center rounded-full bg-cyan-500 text-white hover:bg-cyan-300 hover:text-cyan-700 md:h-9 md:w-9"
         @click="playOrPause"
       >
         <svg

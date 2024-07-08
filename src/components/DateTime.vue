@@ -10,7 +10,7 @@ import dateFlower from "../assets/flower-date.svg";
     <h2
       class="flex items-center text-lg font-semibold uppercase tracking-widest"
     >
-      <span class="border-y-2 border-red-100 px-2">
+      <span class="border-y-2 border-rose-300 px-2">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">/08/</span>
         <span class="hidden sm:inline"> de Agosto de </span>
@@ -19,7 +19,7 @@ import dateFlower from "../assets/flower-date.svg";
       <span class="z-10 -ml-3 -mr-4 h-auto w-14 pt-3" aria-hidden>
         <img :src="dateFlower" />
       </span>
-      <span class="border-y-2 border-red-100 px-2">
+      <span class="border-y-2 border-rose-300 px-2">
         <span class="text-3xl font-normal">17</span>
         <span class="text-3xl font-normal sm:hidden">:00</span>
         <span class="hidden sm:inline"> Horas</span>

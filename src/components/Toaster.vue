@@ -19,7 +19,7 @@ onMounted(() => {
     v-show="useRoute().query.status && !hideToast"
   >
     <div
-      class="fixed right-10 top-10 z-50 rounded-lg bg-blue-300 p-8 text-lg tracking-wide text-white shadow-lg"
+      class="fixed right-10 top-10 z-50 rounded-lg bg-cyan-700 p-8 text-lg tracking-wide text-white shadow-lg"
     >
       <div>
         <p v-if="useRoute().query.status === 'approved'">

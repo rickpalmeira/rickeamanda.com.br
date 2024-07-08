@@ -34,12 +34,12 @@ onMounted(() => {
 <template>
   <page-break />
   <h2
-    class="border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
+    class="border-b-2 border-rose-300 px-2 text-center text-2xl uppercase tracking-widest"
   >
     Lista de Presentes
   </h2>
 
-  <p class="my-14 text-justify text-blue-300">
+  <p class="my-14 text-justify text-cyan-700">
     A presença de vocês é o nosso maior presente. Mas, se desejarem nos
     presentear de outra forma, selecionamos algumas opções que podem ser
     encontradas na lista abaixo:

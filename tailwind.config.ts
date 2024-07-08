@@ -9,20 +9,20 @@ export default {
         cursive: ['"Alyson Signature"', "cursive"],
       },
       colors: {
-        blue: {
-          300: "#2f8296",
-          200: "#5a99a8",
-          100: "#84afb9",
+        cyan: {
+          700: "#2f8296",
+          500: "#5a99a8",
+          300: "#84afb9",
         },
-        green: {
-          300: "#71825e",
-          200: "#94a285",
-          100: "#b7c2ab",
+        emerald: {
+          700: "#71825e",
+          500: "#94a285",
+          300: "#b7c2ab",
         },
-        red: {
-          300: "#8e2957",
-          200: "#b46b8f",
-          100: "#daadc6",
+        rose: {
+          700: "#8e2957",
+          500: "#b46b8f",
+          300: "#daadc6",
         },
         neutral: {
           50: "#fbfbfb",

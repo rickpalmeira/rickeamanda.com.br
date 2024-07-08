@@ -21,7 +21,7 @@ onMounted(() => {
 <template>
   <page-break />
   <h2
-    class="mb-8 border-b-2 border-red-100 px-2 text-center text-2xl uppercase tracking-widest"
+    class="mb-8 border-b-2 border-rose-300 px-2 text-center text-2xl uppercase tracking-widest"
   >
     Local
   </h2>
@@ -29,7 +29,7 @@ onMounted(() => {
     class="mb-20 flex w-full flex-col items-center gap-6 md:mb-0 md:flex-row md:justify-start"
   >
     <div
-      class="my-3 h-80 w-80 rounded-[100%] bg-green-300 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
+      class="my-3 h-80 w-80 rounded-[100%] bg-emerald-700 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
     >
       <div
         class="h-full w-full rounded-[100%] bg-cover bg-center"
@@ -37,7 +37,7 @@ onMounted(() => {
       ></div>
     </div>
     <div
-      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-green-300"
+      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-emerald-700"
     >
       <h3 class="text-3xl font-bold uppercase tracking-widest md:-ml-4">
         Celebração
@@ -52,7 +52,7 @@ onMounted(() => {
         <a href="https://maps.app.goo.gl/zk71FkAk5SA8knia8" target="_blank">
           <maps-icon
             alt="Google Maps"
-            class="h-10 w-10 rounded-full border-2 border-green-300 p-0.5 transition-colors hover:bg-green-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-emerald-700 p-0.5 transition-colors hover:bg-emerald-700 hover:text-white"
           />
         </a>
         <a
@@ -61,7 +61,7 @@ onMounted(() => {
         >
           <waze-icon
             alt="Waze"
-            class="h-10 w-10 rounded-full border-2 border-green-300 p-0.5 transition-colors hover:bg-green-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-emerald-700 p-0.5 transition-colors hover:bg-emerald-700 hover:text-white"
           />
         </a>
         <a
@@ -73,13 +73,13 @@ onMounted(() => {
         >
           <uber-icon
             alt="Uber"
-            class="h-10 w-10 rounded-full border-2 border-green-300 p-1 transition-colors hover:bg-green-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-emerald-700 p-1 transition-colors hover:bg-emerald-700 hover:text-white"
           />
         </a>
         <a href="https://www.instagram.com/pnsfatimago" target="_blank">
           <instagram-icon
             alt="Instagram"
-            class="h-10 w-10 rounded-full border-2 border-green-300 p-1 transition-colors hover:bg-green-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-emerald-700 p-1 transition-colors hover:bg-emerald-700 hover:text-white"
           />
         </a>
       </div>
@@ -88,7 +88,7 @@ onMounted(() => {
   <div class="flex-grow"></div>
   <div class="flex w-full flex-col items-center gap-6 md:flex-row-reverse">
     <div
-      class="h-80 w-80 rounded-[100%] bg-red-300 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
+      class="h-80 w-80 rounded-[100%] bg-rose-700 p-1 shadow-lg transition-all hover:scale-105 hover:shadow-2xl sm:my-0 sm:h-96 sm:w-96"
     >
       <div
         class="h-full w-full rounded-[100%] bg-cover bg-center"
@@ -96,7 +96,7 @@ onMounted(() => {
       ></div>
     </div>
     <div
-      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-red-300 md:text-right"
+      class="flex min-w-[16.25rem] flex-col justify-center gap-3 text-rose-700 md:text-right"
     >
       <h3 class="text-3xl font-bold uppercase tracking-widest md:-mr-4">
         Recepção
@@ -111,7 +111,7 @@ onMounted(() => {
         <a href="https://maps.app.goo.gl/XSjTWyXxe6N5ae7j7" target="_blank">
           <maps-icon
             alt="Google Maps"
-            class="h-10 w-10 rounded-full border-2 border-red-300 p-0.5 transition-colors hover:bg-red-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-rose-700 p-0.5 transition-colors hover:bg-rose-700 hover:text-white"
           />
         </a>
         <a
@@ -120,7 +120,7 @@ onMounted(() => {
         >
           <waze-icon
             alt="Waze"
-            class="h-10 w-10 rounded-full border-2 border-red-300 p-0.5 transition-colors hover:bg-red-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-rose-700 p-0.5 transition-colors hover:bg-rose-700 hover:text-white"
           />
         </a>
         <a
@@ -132,13 +132,13 @@ onMounted(() => {
         >
           <uber-icon
             alt="Uber"
-            class="h-10 w-10 rounded-full border-2 border-red-300 p-1 transition-colors hover:bg-red-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-rose-700 p-1 transition-colors hover:bg-rose-700 hover:text-white"
           />
         </a>
         <a href="https://www.instagram.com/chacara_paris" target="_blank">
           <instagram-icon
             alt="Instagram"
-            class="h-10 w-10 rounded-full border-2 border-red-300 p-1 transition-colors hover:bg-red-300 hover:text-white"
+            class="h-10 w-10 rounded-full border-2 border-rose-700 p-1 transition-colors hover:bg-rose-700 hover:text-white"
           />
         </a>
       </div>
