@@ -23,7 +23,7 @@ import { useRoute } from "vue-router";
     >
       <monogram />
       <date-time />
-      <countdown />
+      <countdown date-string="2024-08-17T17:00:00" />
       <buttons />
     </div>
     <div

@@ -1,29 +1,22 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
-const targetTime = Date.now() + 5000;
-const remainingSeconds = ref(5);
+const props = defineProps<{ dateString: string }>();
 
-const days = computed(() => Math.floor(remainingSeconds.value / 86400));
-const hours = computed(() => Math.floor(remainingSeconds.value / 3600) % 24);
-const minutes = computed(() => Math.floor(remainingSeconds.value / 60) % 60);
-const seconds = computed(() => remainingSeconds.value % 60);
+const currentDate = ref(new Date());
+const weddingDate = ref(new Date(props.dateString));
+const timeDiff = ref(weddingDate.value.getTime() - currentDate.value.getTime());
 
-let interval: ReturnType<typeof setInterval> | undefined;
-
-const updateRemaining = () => {
-  remainingSeconds.value = Math.max(
-    0,
-    Math.ceil((targetTime - Date.now()) / 1000),
-  );
-  if (remainingSeconds.value === 0) clearInterval(interval);
+const updateTimeDiff = () => {
+  currentDate.value = new Date();
+  timeDiff.value = weddingDate.value.getTime() - currentDate.value.getTime();
 };
 
 onMounted(() => {
-  interval = setInterval(updateRemaining, 250);
+  updateTimeDiff();
+  const interval = setInterval(updateTimeDiff, 1000);
+  onUnmounted(() => clearInterval(interval));
 });
-
-onUnmounted(() => clearInterval(interval));
 </script>
 
 <template>
@@ -32,25 +25,25 @@ onUnmounted(() => clearInterval(interval));
   >
     <div class="flex flex-col items-center">
       <span class="text-4xl">
-        {{ days }}
+        {{ Math.floor(timeDiff / (1000 * 60 * 60 * 24)) }}
       </span>
       <span class="uppercase text-cyan-700">dias</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
-        {{ hours }}
+        {{ Math.floor((timeDiff / (1000 * 60 * 60)) % 24) }}
       </span>
       <span class="uppercase text-cyan-700">horas</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
-        {{ minutes }}
+        {{ Math.floor((timeDiff / (1000 * 60)) % 60) }}
       </span>
       <span class="uppercase text-cyan-700">minutos</span>
     </div>
     <div class="flex flex-col items-center">
       <span class="text-4xl">
-        {{ seconds }}
+        {{ Math.floor((timeDiff / 1000) % 60) }}
       </span>
       <span class="uppercase text-cyan-700">segundos</span>
     </div>
