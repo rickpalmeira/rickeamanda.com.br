@@ -1,0 +1,11 @@
+{
+  "name": "rickeamanda",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "casamento.rickpalmeira.dev", "custom_domain": true }
+  ]
+}
