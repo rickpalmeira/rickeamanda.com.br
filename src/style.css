@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: only light;
+  }
+
   @font-face {
     font-family: "Garamond Premr Pro";
     src: url("fonts/GaramondPremrPro.otf") format("opentype");
